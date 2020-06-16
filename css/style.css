@@ -1808,9 +1808,9 @@ table.blueTable {
   background-color: #ffffff !important;
 }
 video{
-  width: auto;
-  height: 50%;
-  float: right;
+  width: 100%;
+  height: auto;
+  position: absolute; 
 }
 #myCarousel{
   background-color: #002e5b;
