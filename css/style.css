@@ -1780,8 +1780,7 @@ td, th {
 table.blueTable tr:nth-child(even) {
     background: #D0E4F5;
 }
-table.blueTable {
-    border: 10px solid #1C6EA4;
+table.blueTable {    
     background-color: #EEEEEE;
     width: 74%;
     text-align: left;
