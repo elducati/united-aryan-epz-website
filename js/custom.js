@@ -146,4 +146,19 @@ jQuery(document).ready(function($) {
 				type: 'image'
 				// other options
 			});
+
+		// Accessibility: keep aria-expanded in sync for dropdowns and allow ESC to close
+		$('.dropdown').on('show.bs.dropdown', function () {
+			$(this).find('.dropdown-toggle').attr('aria-expanded', 'true');
+		});
+		$('.dropdown').on('hide.bs.dropdown', function () {
+			$(this).find('.dropdown-toggle').attr('aria-expanded', 'false');
+		});
+		$(document).on('keydown', function (e) {
+			if (e.key === 'Escape' || e.key === 'Esc') {
+				$('.dropdown.open .dropdown-toggle').each(function () {
+					$(this).dropdown('toggle');
+				});
+			}
+		});
 });

@@ -5,20 +5,19 @@
 	<meta charset="utf-8">
 	<title>United Aryan EPZ</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<meta name="description" content="" />
+	<meta name="description" content="United Aryan (EPZ) — Apparel manufacturer in Kenya. Learn about our company and capabilities." />
 	<meta name="author" content="http://webthemez.com" />
+	<link rel="canonical" href="about.html" />
+	<meta name="theme-color" content="#002E5B" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<!-- css -->
 	<link href="css/bootstrap.min.css" rel="stylesheet" />
 	<link href="css/fancybox/jquery.fancybox.css" rel="stylesheet">
 	<link href="css/flexslider.css" rel="stylesheet" />
+	<link href="css/main.css" rel="stylesheet" />
 	<link href="css/style.css" rel="stylesheet" />
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-	<!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-	<!-- Latest compiled JavaScript -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-	<!-- jQuery library -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<!-- Material Design Bootstrap -->
 	<link rel="stylesheet" href="css/mdb.min.css">
 	<!-- Google Fonts Roboto -->
@@ -33,10 +32,10 @@
 </head>
 
 <body>
-
+	<a href="#content" class="skip-link" style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;">Skip to content</a>
 	<!-- start header -->
 	<header>
-		<div class="navbar navbar-default navbar-static-top">
+		<div class="navbar navbar-default navbar-static-top" role="navigation" aria-label="Main Navigation">
 			<div class="container">
 				<div class="navbar-header">
 					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -51,7 +50,7 @@
 					<ul class="nav navbar-nav">
 						<li><a href="index.html">Home</a></li>
 						<li class="dropdown">
-							<a class="dropdown-toggle" data-toggle="dropdown">About Us
+							<a class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" role="menuitem">About Us
 								<span class="caret"></span></a>
 							<ul class="dropdown-menu">
 								<li><a href="about.html">About Us</a></li>
@@ -60,7 +59,7 @@
 							</ul>
 						</li>
 						<li class="dropdown">
-							<a class="dropdown-toggle" data-toggle="dropdown" href="">What we Do
+							<a class="dropdown-toggle" data-toggle="dropdown" href="" aria-haspopup="true" aria-expanded="false" role="menuitem">What we Do
 								<span class="caret"></span></a>
 							<ul class="dropdown-menu">
 								<li><a href="pline.html">Product Line</a></li>
@@ -70,7 +69,7 @@
 							</ul>
 						</li>
 						<li class="dropdown">
-							<a class="dropdown-toggle" data-toggle="dropdown" href="">Products
+							<a class="dropdown-toggle" data-toggle="dropdown" href="" aria-haspopup="true" aria-expanded="false" role="menuitem">Products
 								<span class="caret"></span></a>
 							<ul class="dropdown-menu">
 								<li><a href="product-profile.html">Product Profile</a></li>
@@ -80,7 +79,7 @@
 							</ul>
 						</li>
 						<li class="dropdown">
-							<a class="dropdown-toggle" data-toggle="dropdown" href="">Infrastructure
+							<a class="dropdown-toggle" data-toggle="dropdown" href="" aria-haspopup="true" aria-expanded="false" role="menuitem">Infrastructure
 								<span class="caret"></span></a>
 							<ul class="dropdown-menu">
 								<li><a href="infrastructure.html">Infrastructure</a></li>
@@ -97,8 +96,8 @@
 	<!-- end header -->
 	<section id="inner-headline">
 		<div class="container">
-			<div class="row">
-				<div class="col-lg-12">
+			<div class="grid" style="grid-template-columns: 1fr;">
+				<div>
 					<h2 class="white-text">About Us</h2>
 				</div>
 			</div>
@@ -107,13 +106,13 @@
 	<section id="content">
 		<section class="section-padding">
 			<div class="container">
-				<div class="row showcase-section">
-					<div class="col-md-6">
-						<img src="img/17.jpg" alt="showcase image">
+				<div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));">
+					<div class="card">
+							<img loading="lazy" src="img/17.jpg" alt="showcase image">
 					</div>
-					<div class="col-md-6">
+					<div class="card">
 						<div class="about-text">
-							<h3>UNITED ARYAN (EPZ) LTD - HIGHLIGHTS:
+							<h3 class="card-title">UNITED ARYAN (EPZ) LTD - HIGHLIGHTS:
 							</h3>
 							<p>Young but experienced promoters from established business backgrounds Established players
 								in garment industry with expertise in sourcing and selling Ready orders and markets
@@ -131,45 +130,49 @@
 
 			<div class="about">
 
-				<div class="row">
-					<div class="col-md-3">
+				<div class="grid">
+					<div class="card">
 						<!-- Heading and para -->
 						<div class="block-heading-two">
-							<h3><span>Vision</span></h3>
+							<h3 class="card-title"><span>Vision</span></h3>
 						</div>
 						<p>To Build Largest Apparel Institution in Sub- Saharan Africa by utilizing the advantages of
 							various duty – free market access status of Africa to trigger industrial growth in the
 							region.</p>
 					</div>
-					<div class="col-md-3">
+					<div class="card">
 						<div class="block-heading-two">
-							<h3><span>Full Value Chain Integration</span></h3>
+							<h3 class="card-title"><span>Full Value Chain Integration</span></h3>
 						</div>
 
 						<p>To be the best fully integrated apparel manufacturing group from “Farm to Fashion”.</p>
 
 					</div>
 
-					<div class="col-md-3">
+					<div class="card">
 						<div class="block-heading-two">
-							<h3><span>Impact</span></h3>
+							<h3 class="card-title"><span>Impact</span></h3>
 						</div>
+						<ul>
 						<li>To Create 100,000 direct jobs impacting about one million lives every single day for good
 						</li>
 						<li>Empowering Women & Youth</li>
 						<li>Providing opportunities for people living with physical challenges and giving second chance
 							to ex-convicts.</li>
 						<li>Creating enabling environment for SMEs and start-ups.</li>
+						</ul>
 					</div>
-					<div class="col-md-3">
+					<div class="card">
 						<div class="block-heading-two">
-							<h3><span>Goal</span></h3>
+							<h3 class="card-title"><span>Goal</span></h3>
 						</div>
+						<ul>
 						<li>Evolving from a good governed company to a GREAT self sustainable institution.</li>
 						<li>Fair profits for the investors & adding positive value to all stakeholders.</li>
 						<li>Providing opportunities for people living with physical challenges and giving second chance
 							to ex-convicts.</li>
 						<li>East African brand company listed on NYSE.</li>
+						</ul>
 					</div>
 
 				</div>

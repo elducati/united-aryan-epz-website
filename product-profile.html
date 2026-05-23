@@ -7,18 +7,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
   <title>United Aryan EPZ : Production line</title>
+  <meta name="description" content="Production line and capabilities at United Aryan (EPZ)." />
+  <link rel="canonical" href="product-profile.html" />
+  <meta name="theme-color" content="#002E5B" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <!--css-->
   <link href="css/bootstrap.min.css" rel="stylesheet" />
   <link href="css/fancybox/jquery.fancybox.css" rel="stylesheet">
   <link href="css/flexslider.css" rel="stylesheet" />
+  <link href="css/main.css" rel="stylesheet" />
   <link href="css/style.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <!-- Latest compiled and minified CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <!-- Latest compiled JavaScript -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <!-- jQuery library -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <!-- Material Design Bootstrap -->
   <link rel="stylesheet" href="css/mdb.min.css">
   <!-- Google Fonts Roboto -->
@@ -36,7 +36,7 @@
 
   <!-- start header -->
   <header>
-    <div class="navbar navbar-default navbar-static-top"
+    <div class="navbar navbar-default navbar-static-top" role="navigation" aria-label="Main Navigation"
       >
       <div class="container">
         <div class="navbar-header">
@@ -51,7 +51,7 @@
           <ul class="nav navbar-nav">
             <li><a href="index.html">Home</a></li>
             <li class="dropdown">
-              <a class="dropdown-toggle" data-toggle="dropdown" href="">About Us
+              <a class="dropdown-toggle" data-toggle="dropdown" href="" aria-haspopup="true" aria-expanded="false" role="menuitem">About Us
                 <span class="caret"></span></a>
               <ul class="dropdown-menu">
                 <li><a href="about.html">About Us</a></li>
@@ -60,7 +60,7 @@
               </ul>
             </li>
             <li class="dropdown">
-              <a class="dropdown-toggle" data-toggle="dropdown" href="">What we Do
+              <a class="dropdown-toggle" data-toggle="dropdown" href="" aria-haspopup="true" aria-expanded="false" role="menuitem">What we Do
                 <span class="caret"></span></a>
               <ul class="dropdown-menu">
                 <li><a href="pline.html">Product Line</a></li>
@@ -70,7 +70,7 @@
               </ul>
             </li>
             <li class="dropdown">
-              <a class="dropdown-toggle" data-toggle="dropdown" href="">Products
+              <a class="dropdown-toggle" data-toggle="dropdown" href="" aria-haspopup="true" aria-expanded="false" role="menuitem">Products
                 <span class="caret"></span></a>
               <ul class="dropdown-menu">
                 <li><a href="product-profile.html">Product Profile</a></li>
@@ -80,7 +80,7 @@
               </ul>
             </li>
             <li class="dropdown">
-              <a class="dropdown-toggle" data-toggle="dropdown" href="">Infrastructure
+              <a class="dropdown-toggle" data-toggle="dropdown" href="" aria-haspopup="true" aria-expanded="false" role="menuitem">Infrastructure
                 <span class="caret"></span></a>
               <ul class="dropdown-menu">
                 <li><a href="infrastructure.html">Infrastructure</a></li>
@@ -96,6 +96,7 @@
   </header>
 
   <body>
+    <a href="#content" class="skip-link" style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;">Skip to content</a>
 
     <!-- BEGAIN PRELOADER -->
     <div id="preloader">
@@ -123,23 +124,24 @@
 
     <section id="single-page-header">
       <div class="banners">
-        <img src="assets/product profile-08.jpg" height="350px" width="100%" alt="Image Not Found">
+        <img loading="lazy" src="assets/product profile-08.jpg" height="350px" width="100%" alt="Image Not Found">
       </div>
     </section>
 
     <section id="about">
       <div class="container">
-        <div class="">
-          <div class="col-md-12">
+        <div class="grid" style="grid-template-columns: 1fr;">
+          <div class="card">
             <div class="about-content">
-              <div class="our-skill row">
+              <div class="our-skill">
                 <h1 class="blue-title">Product Profile</h1>
 
               </div>
-              <div class="row">
+              <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));">
                 <!-- Start single service -->
-                <h2>Fabric Handled</h2>
-                <ul style="list-style: disc;" style="list-style: disc;">
+                <div class="card">
+                <h2 class="card-title">Fabric Handled</h2>
+                <ul style="list-style: disc;">
                   <li>Woven Denim (Rigid & Stretch 5 to 14.5 oz).</li>
                   <li>Knit Denim (Dobby & French Terry.</li>
                   <li>
@@ -152,9 +154,9 @@
                   <li>
                     Knits (Cotton/Poly/Blended Jersey, Fleece, Pique).
                   </li>
-                </ul style="list-style: disc;">
-                <h2>Ladies Wear</h2>
-                <h3>Size Group</h3>
+                </ul>
+                <h2 class="card-title">Ladies Wear</h2>
+                <h3 class="card-subtitle">Size Group</h3>
                 <ul style="list-style: disc;">
                   <li>Missy</li>
                   <li>Petite</li>
@@ -162,7 +164,7 @@
                   <li>Plus Group</li>
                 </ul>
 
-                <h3>Products</h3>
+                <h3 class="card-subtitle">Products</h3>
                 <ul style="list-style: disc;">
                   <li>
                     Bottoms: Skinny, Legging, Curve Fit, Shorts, Skirts & Knit
@@ -170,8 +172,8 @@
                   </li>
                   <li>Sleep Wear: Pyjama, Shorts, Robes</li>
                 </ul>
-                <h2>Mens Wear</h2>
-                <h3>Size Group</h3>
+                <h2 class="card-title">Mens Wear</h2>
+                <h3 class="card-subtitle">Size Group</h3>
 
                 <ul style="list-style: disc;">
                   <li>Young Men</li>
@@ -181,7 +183,7 @@
                   <li>Tall</li>
                 </ul>
 
-                <h3>Products</h3>
+                <h3 class="card-subtitle">Products</h3>
 
                 <ul style="list-style: disc;">
                   <li>Bottoms: Denim & Non-Denim, Casual wear, Trousers</li>
@@ -191,8 +193,8 @@
                   </li>
                   <li>Tops: Woven Shirts & Knit Tops</li>
                 </ul>
-                <h2>Kid's Wear</h2>
-                <h3>Size Group</h3>
+                <h2 class="card-title">Kid's Wear</h2>
+                <h3 class="card-subtitle">Size Group</h3>
 
                 <ul style="list-style: disc;">
                   <li>

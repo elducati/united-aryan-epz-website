@@ -1,1 +1,7 @@
+node_modules/
+dist/
+assets/optimized/
+.cache/
+.DS_Store
+npm-debug.log
 .git .vscode

@@ -11,15 +11,12 @@
 	<link href="css/bootstrap.min.css" rel="stylesheet" />
 	<link href="css/fancybox/jquery.fancybox.css" rel="stylesheet">
 	<link href="css/flexslider.css" rel="stylesheet" />
+	<link href="css/main.css" rel="stylesheet" />
 	<link href="css/style.css" rel="stylesheet" />
 
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-	<!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-	<!-- Latest compiled JavaScript -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-	<!-- jQuery library -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
 	<!-- Material Design Bootstrap -->
 	<link rel="stylesheet" href="css/mdb.min.css">
@@ -34,13 +31,14 @@
 </head>
 
 <body>
+	<a href="#content" class="skip-link" style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;">Skip to content</a>
 
 	<!-- start header -->
 	<header>
-		<div class="navbar navbar-default navbar-static-top">
+		<nav class="navbar navbar-default navbar-static-top" role="navigation" aria-label="Main Navigation">
 			<div class="container">
-				<div class="navbar-header">
-					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#primary-nav-collapse" aria-controls="primary-nav-collapse" aria-expanded="false" aria-label="Toggle navigation">
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
@@ -48,11 +46,11 @@
 					<a class="navbar-brand" href="index.html"><img src="img/newlogo.png" alt="logo"
 							style="width: 700px; " /></a>
 				</div>
-				<div class="navbar-collapse collapse">
-					<ul class="nav navbar-nav">
+					<div id="primary-nav-collapse" class="navbar-collapse collapse">
+						<ul class="nav navbar-nav" role="menubar">
 						<li class="active"><a href="index.html">Home</a></li>
 						<li class="dropdown">
-							<a class="dropdown-toggle" data-toggle="dropdown" href="">About Us
+							<a class="dropdown-toggle" data-toggle="dropdown" href="" aria-haspopup="true" aria-expanded="false" role="menuitem">About Us
 								<span class="caret"></span></a>
 							<ul class="dropdown-menu">
 								<li><a href="about.html">About Us</a></li>
@@ -61,7 +59,7 @@
 							</ul>
 						</li>
 						<li class="dropdown">
-							<a class="dropdown-toggle" data-toggle="dropdown" href="">What we Do
+							<a class="dropdown-toggle" data-toggle="dropdown" href="" aria-haspopup="true" aria-expanded="false" role="menuitem">What we Do
 								<span class="caret"></span></a>
 							<ul class="dropdown-menu">
 								<li><a href="pline.html">Product Line</a></li>
@@ -71,7 +69,7 @@
 							</ul>
 						</li>
 						<li class="dropdown">
-							<a class="dropdown-toggle" data-toggle="dropdown" href="">Products
+							<a class="dropdown-toggle" data-toggle="dropdown" href="" aria-haspopup="true" aria-expanded="false" role="menuitem">Products
 								<span class="caret"></span></a>
 							<ul class="dropdown-menu">
 								<li><a href="product-profile.html">Product Profile</a></li>
@@ -81,7 +79,7 @@
 							</ul>
 						</li>
 						<li class="dropdown">
-							<a class="dropdown-toggle" data-toggle="dropdown" href="">Infrastructure
+							<a class="dropdown-toggle" data-toggle="dropdown" href="" aria-haspopup="true" aria-expanded="false" role="menuitem">Infrastructure
 								<span class="caret"></span></a>
 							<ul class="dropdown-menu">
 								<li><a href="infrastructure.html">Infrastructure</a></li>
@@ -135,10 +133,10 @@
 		<!-- Slider -->
 		<div id="main-slider" class="flexslider col-md-6">
 			
-					<video autoplay loop>
-						<source src="video/ual.mp4" type="video/mp4">
-						Your browser does not support the video tag.
-					</video>
+						<video autoplay loop muted playsinline>
+							<source src="video/ual.mp4" type="video/mp4">
+							Your browser does not support the video tag.
+						</video>
 
 				
 		</div>
@@ -156,18 +154,18 @@
 			</div>
 		</div>
 		<div class="container">
-			<div id="myCarousel" class="carousel slide" data-ride="carousel">
+			<div id="advCarousel" class="carousel slide" data-ride="carousel">
 				<!-- Indicators -->
-				<ol class="carousel-indicators">
-					<li data-target="#myCarousel" data-slide-to="0"></li>
-					<li data-target="#myCarousel" data-slide-to="1"></li>
-					<li data-target="#myCarousel" data-slide-to="2"></li>
-					<li data-target="#myCarousel" data-slide-to="3"></li>
-					<li data-target="#myCarousel" data-slide-to="4"></li>
-					<li data-target="#myCarousel" data-slide-to="5"></li>
-					<li data-target="#myCarousel" data-slide-to="6"></li>
+					<ol class="carousel-indicators">
+						<li data-target="#advCarousel" data-slide-to="0"></li>
+						<li data-target="#advCarousel" data-slide-to="1"></li>
+						<li data-target="#advCarousel" data-slide-to="2"></li>
+						<li data-target="#advCarousel" data-slide-to="3"></li>
+						<li data-target="#advCarousel" data-slide-to="4"></li>
+						<li data-target="#advCarousel" data-slide-to="5"></li>
+						<li data-target="#advCarousel" data-slide-to="6"></li>
 
-				</ol>
+					</ol>
 				<!-- Wrapper for slides -->
 				<div class="carousel-inner">
 
@@ -249,11 +247,11 @@
 
 				</div>
 				<!-- Left and right controls -->
-				<a class="left carousel-control" href="#myCarousel" data-slide="prev">
+				<a class="left carousel-control" href="#advCarousel" data-slide="prev">
 					<span class="glyphicon glyphicon-chevron-left"></span>
 					<span class="sr-only">Previous</span>
 				</a>
-				<a class="right carousel-control" href="#myCarousel" data-slide="next">
+				<a class="right carousel-control" href="#advCarousel" data-slide="next">
 					<span class="glyphicon glyphicon-chevron-right"></span>
 					<span class="sr-only">Next</span>
 				</a>
@@ -274,31 +272,31 @@
 				</div>
 			</div>
 
-			<div class="row">
-				<div class="col-sm-3 info-blocks">
+			<div class="grid">
+				<div class="card info-blocks">
 					<i class="icon-info-blocks fa fa-rocket" aria-hidden="true"></i>
 					<div class="info-blocks-in">
-						<h3>Timely Delivery</h3>
+						<h3 class="card-title">Timely Delivery</h3>
 					</div>
 				</div>
-				<div class="col-sm-3 info-blocks">
+				<div class="card info-blocks">
 
 					<i class="icon-info-blocks fa fa-clock-o" aria-hidden="true"></i>
 					<div class="info-blocks-in">
-						<h3>Competitive cost</h3>
+						<h3 class="card-title">Competitive cost</h3>
 					</div>
 				</div>
-				<div class="col-sm-3 info-blocks">
+				<div class="card info-blocks">
 					<i class="icon-info-blocks fa fa-trophy" aria-hidden="true"></i>
 
 					<div class="info-blocks-in">
-						<h3>Reliable Quality</h3>
+						<h3 class="card-title">Reliable Quality</h3>
 					</div>
 				</div>
-				<div class="col-sm-3 info-blocks">
+				<div class="card info-blocks">
 					<i class="icon-info-blocks fa fa-briefcase" aria-hidden="true"></i>
 					<div class="info-blocks-in">
-						<h3>10000 People: Reliable Workforce</h3>
+						<h3 class="card-title">10000 People: Reliable Workforce</h3>
 					</div>
 				</div>
 			</div>
@@ -318,7 +316,7 @@
 			<div class="row">
 				<div class="col-md-4 col-sm-4">
 					<div class="about-image">
-						<img src="img/IMG_2374.jpg" alt="About Images">
+						<img loading="lazy" src="img/IMG_2374.jpg" alt="About Images">
 					</div>
 					<div class="about-text">
 						<h4>Hard Work</h4>
@@ -331,7 +329,7 @@
 				</div>
 				<div class="col-md-4 col-sm-4">
 					<div class="about-image">
-						<img src="img/IMG_2403.jpg" alt="About Images">
+						<img loading="lazy" src="img/IMG_2403.jpg" alt="About Images">
 					</div>
 					<div class="about-text">
 						<h4>Grit</h4>
@@ -344,7 +342,7 @@
 				</div>
 				<div class="col-md-4 col-sm-4">
 					<div class="about-image">
-						<img src="img/IMG_2406.jpg" alt="About Images">
+						<img loading="lazy" src="img/IMG_2406.jpg" alt="About Images">
 					</div>
 					<div class="about-text">
 						<h4>Value Addition</h4>

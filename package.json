@@ -1,0 +1,24 @@
+{
+  "name": "united-aryan-epz-website",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "vite",
+    "build": "vite build",
+    "preview": "vite preview --port 5000",
+    "lint": "eslint \"**/*.{js,html,css}\" --fix",
+    "format": "prettier --write \"**/*.{js,css,html,json,md}\"",
+    "audit": "lhci autorun --config=./lighthouserc.json",
+    "images:optimize": "node scripts/optimize-images.js",
+    "images:wire": "node scripts/wire-srcsets.js",
+    "test:dropdown": "node scripts/run-dropdown-test.js"
+  },
+  "devDependencies": {
+    "vite": "^5.0.0",
+    "eslint": "^8.0.0",
+    "prettier": "^2.0.0",
+    "lhci": "^0.8.0",
+    "sharp": "^0.32.0",
+    "playwright": "^1.36.0"
+  }
+}
